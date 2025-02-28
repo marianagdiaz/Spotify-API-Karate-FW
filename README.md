@@ -3,6 +3,16 @@
 Este proyecto implementa **pruebas automatizadas** para la API de **Spotify** utilizando **Karate DSL** con la sintaxis de **Cucumber (Gherkin)**, siguiendo el enfoque **BDD (Behavior Driven Development)** con Given-When-Then.
 
 ---
+# 🤖 ¿Qué es Karate DSL?
+
+**Karate DSL** (Domain-Specific Language) es un **lenguaje específico de dominio** diseñado para facilitar la automatización de pruebas de API. Es parte del framework **Karate**, el cual combina la simplicidad de **Cucumber** con un potente motor de ejecución basado en **Java**.
+
+## 🔹 Características de **Karate DSL**
+- Permite escribir pruebas en un formato **simple y legible**, sin necesidad de conocimientos avanzados en programación.
+- Usa una **sintaxis basada en Gherkin**, similar a Cucumber (`Given, When, Then`).
+- Soporta **peticiones HTTP** (`GET`, `POST`, `PUT`, `DELETE`), validaciones de JSON y XML, autenticación, y más.
+
+
 
 ## 📌 **Contexto y Objetivo del Proyecto**
 
@@ -11,7 +21,14 @@ Spotify ofrece una API pública que permite acceder a información de canciones,
 **Objetivos del proyecto:**
 
 ✅ Validar que los endpoints de la API de Spotify devuelvan respuestas correctas en diferentes escenarios.  
-✅ Implementar pruebas siguiendo el enfoque **BDD con Given-When-Then** usando **Cucumber-Gherkin**.  
+✅ Implementar pruebas siguiendo el enfoque **BDD con Given-When-Then** usando **Cucumber-Gherkin:**  
+#### Explicación breve de solicitud:
+1. **`Given url`** → Define la URL de la API.
+2. **`And header Authorization`** → Agrega el token de autenticación.
+3. **`When method GET`** → Ejecuta la petición GET.
+4. **`Then status 200`** → Verifica que la respuesta tenga código HTTP 200.
+5. *`And match response.name == 'Nombre del Álbum'`*
+
 ✅ Generar reportes detallados en **Karate Reports** 
 
 ---
