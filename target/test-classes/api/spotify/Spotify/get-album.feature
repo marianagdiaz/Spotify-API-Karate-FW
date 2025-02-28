@@ -4,7 +4,7 @@ Feature: Get Album
      # URL base de la API de Spotify
     * url 'https://api.spotify.com/v1'
     # Definir el token de autenticación reutilizando el obtenido en `Spotify.feature`
-    * def tokenResponse = call read('Spotify.feature')
+    * def tokenResponse = call read('SpotifyAuthToken.feature')
     * def accessToken = tokenResponse.accessToken
     * def accessTokenIncorrect = "aeae1818"
     * def accessTokenEmpty = ""

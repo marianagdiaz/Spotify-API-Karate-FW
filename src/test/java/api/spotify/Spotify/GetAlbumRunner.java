@@ -1,4 +1,4 @@
-package examples.Spotify;
+package api.spotify.Spotify;
 
 import com.intuit.karate.junit5.Karate;
 

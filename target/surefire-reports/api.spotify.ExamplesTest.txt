@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: examples.ExamplesTest
+Test set: api.spotify.ExamplesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.486 s - in examples.ExamplesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.31 s - in api.spotify.ExamplesTest
