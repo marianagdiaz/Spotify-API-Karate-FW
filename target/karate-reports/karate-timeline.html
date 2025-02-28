@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"examples\/Spotify\/get-album[1:13]","start":1740777176982,"end":1740777178728,"title":"examples\/Spotify\/get-album[1:13] 16:12:56.982-16:12:58.728 Get One Album Info"},{"id":2,"group":2,"content":"examples\/Spotify\/get-album[2:21]","start":1740777176982,"end":1740777178797,"title":"examples\/Spotify\/get-album[2:21] 16:12:56.982-16:12:58.797 Get One Album and market Info"},{"id":3,"group":3,"content":"examples\/Spotify\/get-album[3:33]","start":1740777176982,"end":1740777178722,"title":"examples\/Spotify\/get-album[3:33] 16:12:56.982-16:12:58.722 Get One Album and two market Info"},{"id":4,"group":4,"content":"examples\/Spotify\/get-album[4:41]","start":1740777176982,"end":1740777178683,"title":"examples\/Spotify\/get-album[4:41] 16:12:56.982-16:12:58.683 Get two Album invalid amount"},{"id":5,"group":5,"content":"examples\/Spotify\/get-album[5:47]","start":1740777176982,"end":1740777178659,"title":"examples\/Spotify\/get-album[5:47] 16:12:56.982-16:12:58.659 Get info without album id"},{"id":6,"group":5,"content":"examples\/Spotify\/get-album[6:53]","start":1740777178666,"end":1740777179060,"title":"examples\/Spotify\/get-album[6:53] 16:12:58.666-16:12:59.060 Get album with non-existent id"},{"id":7,"group":4,"content":"examples\/Spotify\/get-album[7:59]","start":1740777178690,"end":1740777179060,"title":"examples\/Spotify\/get-album[7:59] 16:12:58.690-16:12:59.060 Get album with artist id"},{"id":8,"group":3,"content":"examples\/Spotify\/get-album[8:65]","start":1740777178728,"end":1740777179032,"title":"examples\/Spotify\/get-album[8:65] 16:12:58.728-16:12:59.032 Get album with bad token"},{"id":9,"group":1,"content":"examples\/Spotify\/get-album[9:71]","start":1740777178738,"end":1740777179027,"title":"examples\/Spotify\/get-album[9:71] 16:12:58.738-16:12:59.027 Get album with empty token"},{"id":10,"group":2,"content":"examples\/Spotify\/get-album[10:77]","start":1740777178802,"end":1740777179103,"title":"examples\/Spotify\/get-album[10:77] 16:12:58.802-16:12:59.103 Get album without token"},{"id":11,"group":1,"content":"examples\/Spotify\/Spotify[1:11]","start":1740777179034,"end":1740777179234,"title":"examples\/Spotify\/Spotify[1:11] 16:12:59.034-16:12:59.234 Post auth token"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
