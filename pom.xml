@@ -33,7 +33,7 @@
     <build>
         <testResources>
             <testResource>
-                <directory>Source/testCases/java</directory>
+                <directory>src/test/java</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>

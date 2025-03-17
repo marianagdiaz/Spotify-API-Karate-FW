@@ -1,3 +1,4 @@
 api\spotify\ExamplesTest.class
+api\spotify\Spotify\GetAlbumsRunner.class
 api\spotify\Spotify\GetAlbumRunner.class
 api\spotify\Spotify\SpotifyAuthTokenRunner.class
