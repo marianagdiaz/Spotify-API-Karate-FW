@@ -1,4 +1,5 @@
-C:\Users\Cuenta\Downloads\karate-sptf\src\test\java\api\spotify\Spotify\GetAlbumRunner.java
-C:\Users\Cuenta\Downloads\karate-sptf\src\test\java\api\spotify\Spotify\GetAlbumsRunner.java
-C:\Users\Cuenta\Downloads\karate-sptf\src\test\java\api\spotify\Spotify\SpotifyAuthTokenRunner.java
-C:\Users\Cuenta\Downloads\karate-sptf\src\test\java\api\spotify\apiSpotifyRunner.java
+/Users/marianagarciadiaz/Documents/personal/Spotify-API-Karate-FW/src/test/java/api/spotify/Spotify/GetAlbumsRunner.java
+/Users/marianagarciadiaz/Documents/personal/Spotify-API-Karate-FW/src/test/java/api/spotify/Spotify/GetAlbumRunner.java
+/Users/marianagarciadiaz/Documents/personal/Spotify-API-Karate-FW/src/test/java/api/spotify/Spotify/queryOracleRunner.java
+/Users/marianagarciadiaz/Documents/personal/Spotify-API-Karate-FW/src/test/java/utils/DbUtils.java
+/Users/marianagarciadiaz/Documents/personal/Spotify-API-Karate-FW/src/test/java/api/spotify/Spotify/SpotifyAuthTokenRunner.java

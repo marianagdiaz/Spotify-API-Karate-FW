@@ -1,4 +1,5 @@
-api\spotify\ExamplesTest.class
-api\spotify\Spotify\GetAlbumsRunner.class
-api\spotify\Spotify\GetAlbumRunner.class
-api\spotify\Spotify\SpotifyAuthTokenRunner.class
+api/spotify/Spotify/SpotifyAuthTokenRunner.class
+utils/DbUtils.class
+api/spotify/Spotify/GetAlbumRunner.class
+api/spotify/Spotify/GetAlbumsRunner.class
+api/spotify/Spotify/queryOracleRunner.class

@@ -62,4 +62,4 @@ Feature: Get Album
     And header Authorization = 'Bearer ' + accessToken
     And param ids = '3iA6lFPydNrgFd6s1Hojii,14zUHaJZo1mnYtn6IBRaRP'
     When method get
-    Then status 400
+    Then status 200

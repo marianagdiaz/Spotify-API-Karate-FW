@@ -1,18 +1,7 @@
 function fn() {
-  var env = karate.env; // get system property 'karate.env'
-  karate.log('karate.env system property was:', env);
-  if (!env) {
-    env = 'dev';
-  }
-  var config = {
-    env: env,
-    myVarName: 'someValue'
-  }
-  if (env == 'dev') {
-    // customize
-    // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
-    // customize
-  }
-  return config;
+  return {
+    dbUrl: 'jdbc:oracle:thin:@//localhost:1521/XEPDB1',
+    dbUser: 'dummy',
+    dbPassword: 'dummy'
+  };
 }
